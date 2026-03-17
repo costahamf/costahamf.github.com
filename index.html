@@ -1,175 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Современный гид по городу Сосновый Бор: история, герои, архитектура и жизнь города.">
-    <title>Сосновый Бор — Город будущего на берегу Финского залива</title>
-
-    <!-- Modern typography for premium visual hierarchy -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Fully redesigned stylesheet -->
-    <link rel="stylesheet" href="css/modern.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Сосновый Бор — современный городской гид." />
+  <title>Сосновый Бор — Город энергии и природы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/modern.css" />
 </head>
 <body>
-    <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
-    <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+  <header class="site-header" id="topHeader">
+    <div class="container nav-wrap">
+      <a href="#hero" class="logo">Сосновый Бор</a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span>
+      </button>
+      <nav>
+        <ul class="menu" id="mainNav">
+          <li><a href="#about">О городе</a></li>
+          <li><a href="#facts">Факты</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a class="menu-cta" href="./podrob.html">Подробнее</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <header class="site-header">
-        <nav class="container nav">
-            <a class="brand" href="#hero">Сосновый Бор</a>
+  <main>
+    <section class="hero container" id="hero">
+      <p class="eyebrow reveal">Ленинградская область</p>
+      <h1 class="reveal" data-delay="60">Город энергии, природы и сильных людей.</h1>
+      <p class="lead reveal" data-delay="120">
+        Сосновый Бор — город с сильной экономикой, чистой средой и устойчивым развитием.
+        Здесь сочетаются технологический потенциал, комфорт и близость к природе.
+      </p>
+      <div class="hero-actions reveal" data-delay="180">
+        <a href="#about" class="btn btn-primary">Исследовать город</a>
+        <a href="./hero.html" class="btn btn-secondary">Герои и история</a>
+      </div>
+    </section>
 
-            <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">
-                <span></span>
-                <span></span>
-            </button>
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow">О городе</p>
+        <h2>История и современный ритм</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3>Истоки</h3>
+          <p>Первые упоминания территории относятся к XVII веку — важная часть исторического ландшафта региона.</p>
+        </article>
+        <article class="card reveal" data-delay="70">
+          <h3>Развитие</h3>
+          <p>Город вырос в значимый промышленный и научно-технологический центр Ленинградской области.</p>
+        </article>
+        <article class="card reveal" data-delay="120">
+          <h3>Качество жизни</h3>
+          <p>Современная инфраструктура, зеленая среда и размеренный ритм формируют комфорт для жителей.</p>
+        </article>
+      </div>
+    </section>
 
-            <ul class="menu" id="main-menu">
-                <li><a href="#about">О городе</a></li>
-                <li><a href="#facts">Факты</a></li>
-                <li><a href="#gallery">Галерея</a></li>
-                <li><a href="#leaders">Люди</a></li>
-                <li><a href="#next">Будущее</a></li>
-                <li><a class="menu-cta" href="./podrob.html">Подробнее</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="section container" id="facts">
+      <div class="section-head reveal">
+        <p class="eyebrow">Факты</p>
+        <h2>Почему Сосновый Бор важен для региона</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3>Экология</h3>
+          <p>Морской воздух и близость зеленых зон поддерживают высокое качество городской среды.</p>
+        </article>
+        <article class="card reveal" data-delay="70">
+          <h3>Энергетика</h3>
+          <p>Ленинградская АЭС обеспечивает стратегическую роль города в энергетической системе региона.</p>
+        </article>
+        <article class="card reveal" data-delay="120">
+          <h3>Экономика</h3>
+          <p>Стабильная промышленная база и кадровый потенциал поддерживают долгосрочное развитие.</p>
+        </article>
+      </div>
+    </section>
 
-    <main>
-        <!-- Premium hero with strong CTA and layered visual treatment -->
-        <section class="hero container" id="hero">
-            <div class="hero__content reveal">
-                <p class="eyebrow">Ленинградская область · Финский залив</p>
-                <h1>Город энергии, природы и сильных людей.</h1>
-                <p class="hero__lead">
-                    Сосновый Бор — это редкий баланс технологического развития, морского воздуха
-                    и комфортной городской среды. Откройте место, где история встречается с будущим.
-                </p>
-                <div class="hero__actions">
-                    <a class="btn btn--primary" href="#about">Исследовать город</a>
-                    <a class="btn btn--ghost" href="./hero.html">Герои войны</a>
-                </div>
-                <div class="hero__stats">
-                    <article>
-                        <strong>70K+</strong>
-                        <span>жителей</span>
-                    </article>
-                    <article>
-                        <strong>50%</strong>
-                        <span>энергии региона</span>
-                    </article>
-                    <article>
-                        <strong>300+</strong>
-                        <span>лет исторического наследия</span>
-                    </article>
-                </div>
-            </div>
-            <div class="hero__visual reveal" data-delay="120">
-                <img src="img/hero/hero8.jpg" alt="Панорама города Сосновый Бор в мягком вечернем свете">
-                <div class="hero__badge glass-card">
-                    <p>Сегодня в Сосновом Бору</p>
-                    <strong>Чистый воздух · Сильная экономика · Комфортная среда</strong>
-                </div>
-            </div>
-        </section>
+    <section class="section container" id="gallery">
+      <div class="section-head reveal">
+        <p class="eyebrow">Галерея</p>
+        <h2>Городская среда в кадрах</h2>
+      </div>
+      <div class="gallery-grid">
+        <img class="reveal" src="img/portfolio/portfolio-1.jpg" alt="Архитектура города" />
+        <img class="reveal" data-delay="60" src="img/portfolio/portfolio-2.jpg" alt="Панорама города" />
+        <img class="reveal" data-delay="100" src="img/portfolio/portfolio-3.jpg" alt="Город и природа" />
+        <img class="reveal" data-delay="140" src="img/portfolio/portfolio-4.jpg" alt="Городское пространство" />
+      </div>
+    </section>
 
-        <section class="section container reveal" id="about">
-            <div class="section__head">
-                <p class="eyebrow">История</p>
-                <h2>От старинной деревни до современного центра региона</h2>
-            </div>
-            <div class="about-grid">
-                <article class="glass-card">
-                    <h3>Истоки</h3>
-                    <p>На месте города располагалась деревня Устье, упоминаемая в источниках XVII века. Этот берег веками был важной частью истории Ижорской земли.</p>
-                </article>
-                <article class="glass-card">
-                    <h3>Развитие</h3>
-                    <p>Сосновый Бор вырос в один из ключевых городов Ленинградской области, объединив промышленный потенциал и качество городской среды.</p>
-                </article>
-                <article class="glass-card">
-                    <h3>Идентичность</h3>
-                    <p>Сегодня это динамичный город на побережье: с сильной экономикой, культурной жизнью и большим вниманием к экологии.</p>
-                </article>
-            </div>
-        </section>
+    <section class="section container" id="team">
+      <div class="section-head reveal">
+        <p class="eyebrow">Команда</p>
+        <h2>Люди, развивающие город</h2>
+      </div>
+      <div class="grid-2">
+        <article class="person-card reveal">
+          <img src="img/testimonial/testimonial-1.jpg" alt="Михаил Воронков" />
+          <div>
+            <h3>Михаил Воронков</h3>
+            <p>Глава городского округа. Развитие инфраструктуры и городской среды.</p>
+          </div>
+        </article>
+        <article class="person-card reveal" data-delay="80">
+          <img src="img/testimonial/testimonial-2.jpg" alt="Команда развития" />
+          <div>
+            <h3>Команда развития</h3>
+            <p>Профессионалы, работающие над качеством жизни, образованием и культурой.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <section class="section container" id="facts">
-            <div class="section__head reveal">
-                <p class="eyebrow">Почему это важно</p>
-                <h2>Факты, которые формируют характер города</h2>
-            </div>
-            <div class="feature-grid">
-                <article class="feature-card reveal">
-                    <h3>Экологичность</h3>
-                    <p>Близость к заливу и городскому лесу создаёт комфортный микроклимат и высокое качество повседневной жизни.</p>
-                </article>
-                <article class="feature-card reveal" data-delay="100">
-                    <h3>Энергетический центр</h3>
-                    <p>Ленинградская АЭС играет стратегическую роль и обеспечивает значительную часть энергопотребления региона.</p>
-                </article>
-                <article class="feature-card reveal" data-delay="180">
-                    <h3>Экономическая устойчивость</h3>
-                    <p>Сосновый Бор остаётся одним из ведущих промышленных и научно-технологических центров области.</p>
-                </article>
-            </div>
-        </section>
+    <section class="section container cta reveal">
+      <h2>Узнайте больше о городе и его достопримечательностях</h2>
+      <div class="hero-actions">
+        <a href="./podrob.html" class="btn btn-primary">О нашем городе</a>
+        <a href="./arhit.html" class="btn btn-secondary">Достопримечательности</a>
+      </div>
+    </section>
+  </main>
 
-        <section class="section container" id="gallery">
-            <div class="section__head reveal">
-                <p class="eyebrow">Впечатления</p>
-                <h2>Городские пространства и архитектурный ритм</h2>
-            </div>
-            <div class="gallery-grid">
-                <img class="reveal" src="img/portfolio/portfolio-1.jpg" alt="Современная городская архитектура Соснового Бора">
-                <img class="reveal" data-delay="80" src="img/portfolio/portfolio-2.jpg" alt="Вид на набережную и городской ландшафт">
-                <img class="reveal" data-delay="120" src="img/portfolio/portfolio-3.jpg" alt="Пейзажный вид на окрестности города">
-                <img class="reveal" data-delay="160" src="img/portfolio/portfolio-4.jpg" alt="Архитектура и природа в гармонии">
-            </div>
-        </section>
+  <footer class="container site-footer">
+    <p>© 2026 Сосновый Бор</p>
+  </footer>
 
-        <section class="section container" id="leaders">
-            <div class="section__head reveal">
-                <p class="eyebrow">Лица города</p>
-                <h2>Люди, которые развивают Сосновый Бор</h2>
-            </div>
-            <div class="leaders-grid">
-                <article class="leader-card reveal">
-                    <img src="img/testimonial/testimonial-1.jpg" alt="Михаил Васильевич Воронков">
-                    <div>
-                        <h3>Михаил Воронков</h3>
-                        <p>Глава Сосновоборского городского округа. Участвует в развитии городской инфраструктуры и социальной среды.</p>
-                    </div>
-                </article>
-                <article class="leader-card reveal" data-delay="80">
-                    <img src="img/testimonial/testimonial-2.jpg" alt="Представитель городской команды">
-                    <div>
-                        <h3>Команда развития</h3>
-                        <p>Специалисты образования, культуры и городской среды формируют современный образ города и качество жизни жителей.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="section section--cta container reveal" id="next">
-            <div>
-                <p class="eyebrow">Следующий шаг</p>
-                <h2>Погрузитесь глубже в историю, героев и достопримечательности Соснового Бора</h2>
-            </div>
-            <div class="cta-actions">
-                <a class="btn btn--primary" href="./podrob.html">О нашем городе</a>
-                <a class="btn btn--ghost" href="./arhit.html">Достопримечательности</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer container">
-        <p>© 2026 Сосновый Бор. Сделано с уважением к истории и взгляду в будущее.</p>
-    </footer>
-
-    <script src="js/modern.js"></script>
+  <script src="js/modern.js"></script>
 </body>
 </html>
